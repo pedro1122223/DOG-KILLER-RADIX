@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Killer - Rede Radix</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #4b1f8e, #00d4ff);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Radix_DLT_logo.png/600px-Radix_DLT_logo.png') no-repeat center right;
+      background-size: 80px;
+      background-color: #7209b7;
+      padding: 3rem 1rem;
+      color: #fff;
+      animation: slideIn 1s ease-out;
+    }
+    header h1 {
+      font-size: 4rem;
+      margin: 0;
+      animation: glow 2s infinite alternate;
+    }
+    .section {
+      padding: 3rem 1rem;
+      animation: fadeIn 2s ease;
+    }
+    .btn {
+      background-color: #f72585;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin: 0.5rem;
+      display: inline-block;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      background-color: #ff4081;
+    }
+    .intro-text {
+      font-size: 2rem;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      margin-top: 2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 15px;
+      animation: fadeIn 2s ease;
+    }
+    .pathway {
+      font-size: 1.8rem;
+      margin-top: 4rem;
+      color: #ff4081;
+      text-shadow: 0 0 10px #fff;
+      animation: glowingText 2s infinite alternate;
+    }
+    .tokenomics, .airdrop, .whitepaper {
+      background-color: #2b2b40;
+      border-radius: 15px;
+      margin: 1rem auto;
+      max-width: 800px;
+      padding: 2rem;
+      box-shadow: 0 0 20px #000;
+      transition: transform 0.4s;
+    }
+    .tokenomics:hover, .airdrop:hover, .whitepaper:hover {
+      transform: translateY(-5px);
+    }
+    .total-supply {
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: #f72585;
+      padding: 1rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #000;
+      animation: glow 2s infinite alternate;
+    }
+    footer {
+      background-color: #111;
+      padding: 1rem;
+      font-size: 0.9rem;
+      animation: fadeIn 3s ease;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .social-icons a img {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s;
+    }
+    .social-icons a img:hover {
+      transform: scale(1.2);
+    }
+    .x-profile {
+      margin-top: 2rem;
+    }
+    .x-profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px #f72585;
+    }
+    .banner-image {
+      margin-top: 2rem;
+    }
+    .banner-image img {
+      width: 90%;
+      max-width: 700px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #000;
+    }
+    .discord-section {
+      margin-top: 3rem;
+    }
+    .discord-button {
+      display: inline-block;
+      background-color: #5865F2;
+      color: white;
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .discord-button:hover {
+      background-color: #4752C4;
+      transform: scale(1.05);
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; }
+      to { text-shadow: 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideIn {
+      from { transform: translateX(-100%); }
+      to { transform: translateX(0); }
+    }
+    @keyframes glowingText {
+      from { text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff4081, 0 0 30px #ff4081; }
+      to { text-shadow: 0 0 30px #ff00ff, 0 0 40px #ff4081, 0 0 50px #ff4081; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DOG KILLER</h1>
+    <p>A MEMECOIN DA REDE RADIX</p>
+    <a class="btn" href="https://ociswap.com" target="_blank">COMPRE NA OCISWAP</a>
+    <a class="btn" href="https://x.com/radixdogkiller" target="_blank">X DO PROJETO</a>
+    <a class="btn" href="https://x.com/radixdlt" target="_blank">X DA RADIX</a>
+    <a class="btn" href="https://www.radixdlt.com/" target="_blank">SITE RADIX</a>
+  </header>
+
+  <div class="section intro-text">
+    <p><strong>Dog Killer: o nome é ousado, mas o propósito é nobre!</strong></p>
+    <p>Juntos, podemos fazer a diferença, salvando cães abandonados ao redor do mundo.</p>
+    <p>O meme que trará 1 bilhão de pessoas para o ecossistema Radix, transformando o mercado de criptoativos com impacto real!</p>
+  </div>
+
+  <div class="pathway">
+    <p>🔪 DOG KILLER está fazendo um caminho de sucesso na rede Radix...</p>
+    <p>Cada passo nos aproxima de um futuro melhor, com **doações** e **ajuda aos animais abandonados**.</p>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.radixdlt.com/" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Radix_DLT_logo.png/600px-Radix_DLT_logo.png" alt="Radix Logo">
+    </a>
+    <a href="https://ociswap.com" target="_blank">
+      <img src="https://raw.githubusercontent.com/ociswap/brand/main/logo/Ociswap_Logo_BlackBG.png" alt="Ociswap Logo">
+    </a>
+  </div>
+
+  <div class="total-supply">
+    FORNECIMENTO TOTAL: 1.000.000.000 TOKENS
+  </div>
+
+  <div class="section banner-image">
+    <img src="https://pbs.twimg.com/media/Goz-75FXMAEU3X8?format=jpg&name=medium" alt="DogK Banner">
+  </div>
+
+  <div class="section whitepaper">
+    <h2>🐺 DOG KILLER — Whitepaper (Versão Inicial)</h2>
+    <p><strong>1. Introdução:</strong><br>Dog Killer é mais que uma meme coin — é um movimento...</p>
+  </div>
+
+  <div class="section discord-section">
+    <h2>🔥 Entre para a Comunidade</h2>
+    <p>Junte-se ao nosso servidor no Discord e faça parte da matilha!</p>
+    <a class="discord-button" href="https://discord.gg/6qJrDR9b" target="_blank">ENTRAR NO DISCORD</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Dog Killer - Todos os direitos reservados.
+  </footer>
+</body>
+</html>
